@@ -314,7 +314,7 @@ public enum LoRATrain {
                     + "validation loss \(validationLoss.formatted()), "
                     + "validation time \(validationTime.formatted())s"
             case .save(let iteration, let url):
-                "Iteration \(iteration + 1): saved weights to \(url.path())"
+                "Iteration \(iteration + 1): saved weights to \(url.path)"
             }
         }
     }

@@ -67,10 +67,10 @@ private let files = [
 
 public func download(into: URL) async throws {
     for (_, info) in files {
-        let fileURL = into.appending(component: info.name)
-        if !FileManager.default.fileExists(atPath: fileURL.path()) {
+        let fileURL = into.appendingPathComponent(info.name)
+        if !FileManager.default.fileExists(atPath: fileURL.path) {
             print("Download: \(info.name)")
-            let url = baseURL.appending(component: info.name)
+            let url = baseURL.appendingPathComponent(info.name)
             let (data, response) = try await URLSession.shared.data(from: url)
 
             guard let httpResponse = response as? HTTPURLResponse else {
@@ -89,7 +89,7 @@ public func load(from: URL) throws -> [FileKind: MLXArray] {
     var result = [FileKind: MLXArray]()
 
     for (key, info) in files {
-        let fileURL = from.appending(component: info.name)
+        let fileURL = from.appendingPathComponent(info.name)
         let data = try Data(contentsOf: fileURL).gunzipped()
 
         let array = MLXArray(

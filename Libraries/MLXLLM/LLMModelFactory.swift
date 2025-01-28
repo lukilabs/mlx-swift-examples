@@ -276,7 +276,7 @@ public class LLMModelFactory: ModelFactory {
             hub: hub, configuration: configuration, progressHandler: progressHandler)
 
         // load the generic config to unerstand which model and how to load the weights
-        let configurationURL = modelDirectory.appending(component: "config.json")
+        let configurationURL = modelDirectory.appendingPathComponent("config.json")
         let baseConfig = try JSONDecoder().decode(
             BaseConfiguration.self, from: Data(contentsOf: configurationURL))
         let model = try typeRegistry.createModel(
