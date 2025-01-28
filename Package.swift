@@ -27,7 +27,7 @@ let package = Package(
             targets: ["StableDiffusion"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/lukilabs/mlx-swift", branch: "main"),
+        .package(url: "https://github.com/lukilabs/mlx-swift", branch: "peti/metal_fix"),
         .package(
             url: "https://github.com/lukilabs/swift-transformers", branch: "main"
         ),
