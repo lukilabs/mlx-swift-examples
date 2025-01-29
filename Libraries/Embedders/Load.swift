@@ -58,7 +58,7 @@ public func load(
 
 func loadSynchronous(modelDirectory: URL) throws -> EmbeddingModel {
     // create the model (no weights loaded)
-    let configurationURL = modelDirectory.appending(component: "config.json")
+    let configurationURL = modelDirectory.appendingPathComponent("config.json")
     let baseConfig = try JSONDecoder().decode(
         BaseConfiguration.self, from: Data(contentsOf: configurationURL))
 

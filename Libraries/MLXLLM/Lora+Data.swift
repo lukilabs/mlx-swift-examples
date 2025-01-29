@@ -14,8 +14,8 @@ public func loadLoRAData(directory: URL, name: String) throws -> [String] {
     let extensions = ["jsonl", "txt"]
 
     for ext in extensions {
-        let url = directory.appending(component: "\(name).\(ext)")
-        if FileManager.default.fileExists(atPath: url.path()) {
+        let url = directory.appendingPathComponent("\(name).\(ext)")
+        if FileManager.default.fileExists(atPath: url.path) {
             return try loadLoRAData(url: url)
         }
     }

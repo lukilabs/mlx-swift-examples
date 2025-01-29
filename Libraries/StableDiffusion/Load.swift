@@ -378,7 +378,7 @@ func resolve(hub: HubApi, configuration: StableDiffusionConfiguration, key: File
         configuration.files[key] != nil, "configuration \(configuration.id) missing key: \(key)")
     let repo = Hub.Repo(id: configuration.id)
     let directory = hub.localRepoLocation(repo)
-    return directory.appending(component: configuration.files[key]!)
+    return directory.appendingPathComponent(configuration.files[key]!)
 }
 
 func loadConfiguration<T: Decodable>(

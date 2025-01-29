@@ -23,7 +23,7 @@ public struct PoolingConfiguration: Codable {
 }
 
 func loadPooling(modelDirectory: URL) -> Pooling {
-    let configurationURL = modelDirectory.appending(components: "1_Pooling", "config.json")
+    let configurationURL = modelDirectory.appendingPathComponent("1_Pooling").appendingPathComponent("config.json")
     guard
         let poolingConfig = try? JSONDecoder().decode(
             PoolingConfiguration.self, from: Data(contentsOf: configurationURL))
