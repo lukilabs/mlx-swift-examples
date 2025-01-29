@@ -27,9 +27,9 @@ let package = Package(
             targets: ["StableDiffusion"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/lukilabs/mlx-swift", branch: "peti/metal_fix"),
+        .package(url: "https://github.com/lukilabs/mlx-swift", revision: "076dc6c446ce504cab4b7f08bbaeeeb84bde59c8"),
         .package(
-            url: "https://github.com/lukilabs/swift-transformers", branch: "main"
+            url: "https://github.com/lukilabs/swift-transformers", revision: "909b10964bdefab27b76d0dc7ac0c2df5c20a571"
         ),
         .package(
             url: "https://github.com/apple/swift-async-algorithms", .upToNextMinor(from: "1.0.0")),

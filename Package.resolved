@@ -14,7 +14,6 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukilabs/Jinja",
       "state" : {
-        "branch" : "main",
         "revision" : "e0127fb027986aacc7f3d26c3748c818876c1d5f"
       }
     },
@@ -23,8 +22,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukilabs/mlx-swift",
       "state" : {
-        "branch" : "peti/metal_fix",
-        "revision" : "05ad08b39ad53112ad1a77c6b1ceacd7c7692cb6"
+        "revision" : "076dc6c446ce504cab4b7f08bbaeeeb84bde59c8"
       }
     },
     {
@@ -68,8 +66,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/lukilabs/swift-transformers",
       "state" : {
-        "branch" : "main",
-        "revision" : "b0b0f83465ceacee484b80d07b258ae2d669fd6d"
+        "revision" : "909b10964bdefab27b76d0dc7ac0c2df5c20a571"
       }
     }
   ],
