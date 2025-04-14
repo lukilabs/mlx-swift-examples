@@ -29,7 +29,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/lukilabs/mlx-swift", revision: "076dc6c446ce504cab4b7f08bbaeeeb84bde59c8"),
         .package(
-            url: "https://github.com/lukilabs/swift-transformers", revision: "909b10964bdefab27b76d0dc7ac0c2df5c20a571"
+            url: "https://github.com/lukilabs/swift-transformers", revision: "3cdffef5e907b033b62e2dea238334ca3d4bd8bc"
         ),
         .package(
             url: "https://github.com/apple/swift-async-algorithms", .upToNextMinor(from: "1.0.0")),
